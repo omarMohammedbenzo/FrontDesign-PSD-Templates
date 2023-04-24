@@ -1,0 +1,299 @@
+/* ==>> General Attributes */
+
+body {
+    margin: 0;
+    text-transform: capitalize;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+.main_button{
+    background: #ffd800 !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*  =================>>> start header Section  */
+
+.header_section{
+    background:url('..//images/bg1.png') no-repeat center center;
+    background-size:cover;
+    padding: 10px;
+    color: white;
+    height: 600px;
+    border-top: 5px solid #ffd800;
+}
+.header_section .navbar_section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 70px;
+    line-height: 3;
+    transition: all 0.5s;
+}
+.header_section .items_section ul li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.header_section .navbar_section .logo_section{
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 125px;
+}
+.header_section .header_main .buttons_sections button{
+    width: 160px;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+/*  =================>>> End header Section */
+
+/*   ================>>> Start Navebar Section */
+.navbar_section .btn{
+    display: none !important;
+  }
+  .navbar_section .btn.close-btn{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+  }
+@media screen and (max-width: 790px) {
+
+    .navbar_section .btn{
+        line-height: 3;
+      display: block !important;
+    }
+    .navbar_section{
+        position: relative;
+    }
+    .navbar_section .items_sections{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      max-width: 350px;
+      top: 6px;
+      /* left: -350px; */
+      left: 0px;
+      opacity: 1;
+      background: #242526;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+      z-index: 999;
+      transition: all 0.5s;
+    }
+ 
+    #menu-btn:checked ~ .navbar_section.items_sections{
+      opacity: 1;
+      transition: all 0.5s;
+    }
+    #close-btn:checked ~ .items_section {
+        top: 6px;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      
+    .items_section ul{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .items_section ul li{
+       font-size: 22px !important;
+       margin: 10px 0;
+    }
+   
+  }
+.header_section input{
+    display: none;
+    z-index: 9999;
+  }
+  
+/*   ================>>> End Navebar Section */
+
+
+/*  =================>>> start mobil Section  */
+
+.mobile_section{
+    background: #191b29;
+    color: white;
+    margin-top: -30px;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 0;
+}
+.mobile_section .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.mobile_section .container .first_col,.third_col{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column ;
+}
+
+.mobile_section .container .second_col{
+margin-top: -100px;
+margin-right: 20px;
+}
+
+.mobile_section .container  .fs-2{
+  color: #ffd800 !important;
+}
+.mobile_section .container span{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+@media(max-width:950px){
+/* for header section */
+    .header_section .items_section ul li{
+        font-size: 10px;
+    }
+
+    .mobile_section .container {
+        display: block;
+        text-align: center;
+    }
+    .mobile_section .container .second_col{
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        }
+}
+/*  =================>>> End mobil Section */
+
+
+/*  =================>>> start Team Section  */
+.Team_section{
+    background:#ffd800;
+    margin-top: 0;
+    padding: 10px;
+        z-index: 100;
+
+}
+
+.Team_section .team_members{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.Team_section .container .team_members img{
+ width: 100px;
+}
+.Team_section .container .team_members p{
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+   }
+
+
+   .Team_section .footer_team{
+    margin-top: 100px;
+    background: #ffe347;
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+   }
+
+
+/*  =================>>> End Team Section */
+.mac_book {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items:flex-start;
+    position: relative;
+
+}
+.mac_book .content_section{
+margin-left:100px !important;
+}
+
+.mac_book .img_sec img{
+    width: 900px;
+    margin-top: -300px;
+    z-index: 100;
+    margin-left: 0;
+}
+.mac_book button{
+    border: none;
+    background-color: #191b29;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+ 
+/*  =============>>>start App_works section   */
+
+.app_works{
+background: url('..//images/bg1.png')no-repeat center center;
+background-size:cover ;
+padding: 30px;
+}
+
+.app_works span{
+    font-size: 40px;
+    color: #636363;
+}
+.app_works h3{
+    color: #ffffff;
+}
+.app_works .app_icons{
+    margin: 5rem 0;
+   display: flex;
+   justify-content: center;
+}
+.app_works .app_icons .col_sec .fa-5x{
+    color: #ffd800 !important;
+}
+.app_works .app_icons .col_sec h4{
+    color:white;
+}
+.app_works .app_icons .col_sec p{
+    color:rgb(192, 192, 192);
+}
+
+    /*  =============>>>End App_works section   */
+
+
+    /* =========================>>>>> footer */
+
+    footer{
+        background: #191b29;
+    }  
+
+    footer .container{
+        padding: 4rem;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
